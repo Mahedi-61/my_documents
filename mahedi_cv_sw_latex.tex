@@ -1,0 +1,274 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}    
+% personal data
+\name{Mahedi}{Hasan}
+% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{House \#160/1, Road \#2, Shahid Nagar, Lalbagh, Dhaka}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+% \phone[mobile]{909-839-3097}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+% \email{xpan1@swarthmore.edu}                               % optional, remove / comment the line if not wanted
+% \homepage{shawnpan.me}                         % optional, remove / comment the line if not wanted
+% \extrainfo{}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+  
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace*{-23mm}
+
+\begin{center}
+\begin{tabular}{ c c c c }
+\faEnvelopeO\enspace{mahedi0803@gmail.com} & \faGithub\enspace \href{http://www.github.com/Mahedi-61/}{Mahedi-61} & \faMobile\enspace +8801767-064521\\  
+\end{tabular}
+\end{center}
+
+\section{SUMMARY}
+\begin{minipage}{\maincolumnwidth}%
+	\small{
+    	\begin{itemize}
+	\item M.Sc student in information technology. Extensive experience with computer programming and application development. Expertise in coding, trouble shooting and debugging in JAVA, HTML, C++, Python. Successfully completed several academic  projects and applications.
+\end{itemize}}%
+\end{minipage}% 
+
+\section{EDUCATION}
+{\customcventry{Oct' 2015 - present}{M.Sc. in Information and Communication Technology (ICT) GPA: 3.58/4.0}{Bangladesh University of Engineering and Technology (BUET)}{Dhaka}{}{}}
+
+\hfill \break 
+{\customcventry{September 2013}{B.Sc. in Electrical and Electronic Engineering (EEE) GPA: 3.48/4.0}{Khulna University of Engineering and Technology (KUET)}{Khulna}{}{}}
+
+\hfill \break
+{\customcventry{July 2008}{Engineering University Higher Secondary School and College  GPA: 5.0/5.0}{Higher Secondary Certificate}{Dhaka Board}{}{}}
+
+\hfill \break
+{\customcventry{May 2006}{West End High School  GPA: 5.0/5.0}{Secondary School Certificate}{Dhaka Board}{}{}}
+
+\section{EXPERIENCE}
+{\customcventry{}{}{Adjunct Lecturer}{May 2016 - present}{}
+{\begin{itemize}
+  	\item {Manarat International University \\
+	Department of Computer Science and Engineering}
+\end{itemize}
+}
+
+
+\section{PROJECTS}
+{\customcvproject{Gait Based People Indetification}{October 2017 - present}
+  {\begin{itemize}
+    \item RNN based temporal model for people indentification based on their gait signature.
+    \item Supervisor: \href{https://hossenmustafa.buet.ac.bd/} {Dr. Hossen Asiful Mustafa}
+    \item Report \& Code: \href{https://github.com/Mahedi-61/temporal\_network/} {temporal\_network}
+  \end{itemize}
+  }
+}
+
+{\customcvproject{Development of Automated Essay Scoring}{October 2016}
+  {\begin{itemize}
+    \item Development of machine learning based automated eassy scoring (english) system.
+    \item Supervisor: \href{https://hossenmustafa.buet.ac.bd/} {Dr. Hossen Asiful Mustafa}
+    \item Report \& Code: \href{https://github.com/Mahedi-61/Essay-Scoring/} {Essay-Scoring}
+  \end{itemize}
+  }
+}
+
+{\customcvproject{Distributed Password Cracking}{February 2016}
+  {\begin{itemize}
+    \item Multiple Client based distributed online password cracking system based on Java.
+    \item Supervisor: \href{https://hossenmustafa.buet.ac.bd/} {Dr. Hossen Asiful Mustafa}
+    \item Report \& Code: \href{https://github.com/Mahedi-61/Distributed-Password-Cracker/} {Distributed-Password-Cracker}
+  \end{itemize}
+  }
+}
+
+{\customcvproject{File Encryption Decryption with DES}{January 2016}
+  {\begin{itemize}
+    \item Complete Java based implementation of DES cryptographic algorithm from scratch. 
+    \item Supervisor: \href{https://hossenmustafa.buet.ac.bd/} {Dr. Hossen Asiful Mustafa}
+    \item Report \& Code: \href{https://github.com/Mahedi-61/File-Encryption-Decryption-with-DES} {File-Encryption-Decryption-with-DES}
+  \end{itemize}
+  }
+}
+
+%Application
+\section{APPLICATION}
+{\customcvproject{Amar Diary}{August 2017}
+  {\begin{itemize}
+    \item An andorid application for keeping personal diary
+    \item Source: \href{https://github.com/Mahedi-61/AmarDiary}{Amar Diary}
+    \item Market: \href{https://play.google.com/store/apps/details?id=bd.org.fulkuri.amardairy} {playstore}
+  \end{itemize}
+  }
+}
+
+{\customcvproject{Personal Profile}{February 2017}
+  {\begin{itemize}
+    \item An andorid application for personal profile maintenance 
+    \item Source: \href{https://github.com/Mahedi-61/Personal-Profile}{Personal Profile}
+  \end{itemize}
+  }
+}
+
+\section{TECHNICAL SKILL}
+\begin{minipage}{\maincolumnwidth}%
+	\small{
+    	\begin{itemize}
+	\item Programming Languages: {C, C++, Java, Python} 
+     \item Web Development: {HTML/CSS, Javascript}
+	\item Application Development : {Android}
+    \item System Administration: {Linux/Unix}
+	\item Database Management: {SQL Server} 
+\end{itemize}}%
+\end{minipage}%
+
+
+\section{ACHIEVEMENTS}
+{\customcvproject {B.Sc. Engineering Scholarships}{}
+{\begin{itemize}
+	\item KUET students merit scholarships through four years for academic
+	excellence from the Govt. of the People's Republic of Bangladesh
+ \end{itemize}
+  }
+}
+
+\section{EXTRA-CURRICULAR ACTIVITIES}}
+{\customcvproject {Volunteer Activities}{}
+{\begin{itemize}
+    \item Member at Inter University Tech Fiesta, 2012 Organized by EEE Association, KUET.
+	\item Volunteer at IEEE Student Professional Awareness Conference (SPAC), 2010 Organized by IEEE
+	Student Branch, KUET.
+ \end{itemize}
+  }
+}
+
+%Application
+ \section{REFERENCES}
+{\customcvproject{Prof. Dr. Md. Liakot Ali}{}
+  {\begin{itemize}
+   \item Professor, \href{http://iict.buet.ac.bd/} {Institute of Information and Communication Technology} (IICT) \\
+	\href{http://www.buet.ac.bd/} {Bangladesh University of Engineering and Technology} (BUET) \\
+	Dhaka - 1000, Bangladesh \\
+    E-mail: liakot@iict.buet.ac.bd \\
+    Phone: 880-2-55167100/6516
+  \end{itemize}
+  }
+}
+\hfill \break 
+{\customcvproject{Dr. Hosssen Asiful Mustafa}{}
+  {\begin{itemize}
+	\item Assistant Professor, \href{http://iict.buet.ac.bd/} {Institute of Information and Communication Technology} (IICT \\
+	\href{http://www.buet.ac.bd/} {Bangladesh University of Engineering and Technology} (BUET) \\
+	Dhaka - 1000, Bangladesh \\
+	E-mail: hossen\_mustafa@iict.buet.ac.bd \\
+    Phone: 880-2-55167100/6208
+  \end{itemize}
+  }
+}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
