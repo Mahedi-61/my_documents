@@ -142,7 +142,8 @@ includemp]{geometry}
 \newcommand{\makeheading}[2][]%
 {\hspace*{-\marginparsep minus \marginparwidth}%
 	\begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
-		{\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+		{\begin{center}\huge{\textbf{#2}} \\ \large {#1} \end{center} \hfill } \\
+		[-2 \baselineskip]%
 		\rule{\columnwidth}{1pt}%
 	\end{minipage}}
 	
@@ -217,112 +218,156 @@ includemp]{geometry}
 %%%%%%%%%%%%%%% begin my cv document %%%%%%%%%%%%%%%
 
 \begin{document}
-\makeheading[\includegraphics{mahedi}]{Md. Mahedi Hasan}
+\sffamily%
+\makeheading[\url{http://www.mahedihasan.me/}]{Md Mahedi Hasan}
 
 \section{Contact Information}
-\newlength{\rcollength}\setlength{\rcollength}{1.4in}%
+\newlength{\rcollength}\setlength{\rcollength}{2.0in}%
 
 \begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
-	House No: 160/1, Road No: 2, Shahid Nagar,   & +880-1535-822954 \\
-	Lalbagh, Dhaka-1211, Bangladesh     & \email{mahedi0803@gmail.com}\\
-	Find & \href{http://www.twitter.com/}{Twitter} \href{http://www.github.com/Mahedi-61/}{Github}\\
+	House No: 160/1, Road No: 2,   & Phone : +880-1535-822954 \\
+	Shahid Nagar, Lalbagh, & Email : \email{mahedi0803@gmail.com}\\
+	Dhaka-1211, Bangladesh & Github: \href{http://www.github.com/Mahedi-61/}{Mahedi-61}\\
 \end{tabular}
 
 
-\section{Research Interest}
-Computer vision, Image Processing and Pattern Recognition, Machine Learning
+\section{Objectives}
+To pursue research opportunities in the fields of computer vision and deep learning.
+
 
 
 \section{Education}
-\begin{outerlist}
-	\item[] M.Sc. in Information and Communication Technology
-		\begin{innerlist}
-			\item Bangladesh University of Engineering and Technology (October 2014 - present)
-			\item Thesis topic: \emph{Recognizing and tracking people by their gait signature across multiple non-intersecting surveillance cameras.}
-			\item Advisor: \href{https://hossenmustafa.buet.ac.bd/} {Dr. Hossen Asiful Mustafa}
-			\item CGPA: 3.58 (out of 4)
-		\end{innerlist}
-	
-	\item[] B.Sc. in Electrical and Electronic Engineering
-		\begin{innerlist}
-			\item Khulna University of Engineering and Technology (September 2013)
-			\item Advisor: \href{http://www.kuet.ac.bd/eee/ahmad/} {Prof. Dr. Mohiuddin Ahmad}
-			\item CGPA: 3.48 (out of 4)
-		\end{innerlist}
-		
-	\item[] Higher Secondary School Certificate
+
+\textbf{M.Sc. in Information and Communication Technology (2015 - present)}
 	\begin{innerlist}
-		\item Dhaka Board (July 2008)
-		\item Engineering University Higher Secondary School
-		\item CGPA: 5.00 (out of 5)
+			\item[] Bangladesh University of Engineering and Technology (BUET)
+			\item[] CGPA 3.58 out of 4.00
 	\end{innerlist}
 	
-	\item[] Secondary School Certificate
-		\begin{innerlist}
-			\item Dhaka Board (May 2006)
-			\item West End High School
-			\item CGPA: 5.00 (out of 5)
-		\end{innerlist}
-\end{outerlist}
+\flushleft
+\textbf{B.Sc. in Electrical and Electronic Engineering (2008 - 2013)}
+	\begin{innerlist}
+			\item[] Khulna University of Engineering and Technology (KUET)
+			\item[] CGPA 3.48 out of 4.00
+	\end{innerlist}
+	
+\flushleft
+\textbf{Higher Secondary School Certificate (2006 - 2008)}
+	\begin{innerlist}
+		\item[] Engineering University Higher Secondary School
+		\item[] GPA 5.00 out of 5.00
+	\end{innerlist}
+	
+\flushleft
+\textbf{Secondary School Certificate (2004 - 2006)}
+	\begin{innerlist}
+			\item[] West End High School, Dhaka
+			\item[] GPA 5.00 out of 5.00
+	\end{innerlist}
+
+
+
+\section{Research Interest}
+Computer Vision and Pattern Recognition \\ Machine Learning \\ Deep Learning
+
 
 \section{Professional Experience}
 \textbf{Adjunct Lecturer} \hfill{May 2016 - present}
 	\begin{innerlist}
-		\item[]{Manarat International University}
 		\item[]{Department of Computer Science and Engineering}
+		\item[]{Manarat International University}
 	\end{innerlist}
+
 \flushleft
-\textbf{Associate Editor} \hfill{March 2015 - present}
+\textbf{Assistant Editor} \hfill{March 2015 - present}
 	\begin{innerlist}
 		\item[]{Byapon science magazine}
+		\item[]{Bi-monthly youth science magazine}
+		\item[]{Printed and circulated nationwide more than 12,000 copies per issue}
 		\item[]{Office: 48/1, Motijheel C/A, Dhaka-1200, Bangladesh}
 		\item[]\href{http://www.byapon.com}{Web: www.byapon.com}
 	\end{innerlist}
 
+\flushleft
+\textbf{Android Application Development} \hfill{January 2014 - April 2015}
+\begin{innerlist}
+	\item[]{Earth Face}
+	\item[]\href{http://www.earthface.biz}{Web: www.earthface.biz}
+\end{innerlist}
 
 
-\section{Refereed Journal Publications}
-\begin{bibsection}
-	\vspace{-.1275in}
-	\item {\bf Hasan, M.}, Asiful, H., "Two stream network for gait recognition" \emph{IEEE}, 52(8):25--31, 2018.
-	
-	\item {\bf Hasan, M.}, Asiful, H., "Bidirectional GRU architecture for human gait recognition" \emph{ICCV}, 201(2):285--292, 2019.
-\end{bibsection}
 
-\section{Submitted Journal Publications}
-\begin{bibsection}
-	\vspace{-.1275in}
-	\item {\bf Hasan, M.}, Asiful, H., "Recognizing and tracking people by their gait signatures across multiple non-intersecting surveillance cameras." \emph{IEEE}, 52(8):25--31, 2018.t...
-\end{bibsection}
 
-\section{Peer-Reviewed Conference Paper}
+
+
+\section{Conference Publications}
 \vspace{-.1in}
 \begin{bibsection}
-	\item {\bf Hasan, M.}, Asiful, H. "preparing journal paper or published conference paper"
+	\item \textbf{YOLO-Based Three-Stage Network for Bangla License Plate Recognition in Dhaka Metropolitan City} \\
+	Sohaib Abdullah, \textbf{Md Mahedi Hasan}, Sheikh Muhammad Saiful Islam \\
+	\textit{To Appear in IEEE Proceedings of the 2018 International Conference on Bangla Speech and Language Processing (ICBSLP), 21-22 September, 2018, Bangladesh.}
 \end{bibsection}
 
 
 
-\section{Projects}
-\begin{outerlist}
-	\item  Development of automated essay scoring
+
+\section{Submitted Manuscripts}
+\begin{bibsection}
+	\vspace{-.1275in}
+	\item \textbf{Pose-Based Two-Stage Network for View Invariant Gait Recognition} \\
+	\textbf{Md Mahedi Hasan}, Hossen Asiful Mustafa \\
+	\textit{In 14th Asian Conference on Computer Vision (ACCV).}	
+		
+	\item \textbf{DEEPGONET: Multi-label Prediction of GO Annotation for Protein from Sequence Using Cascaded Convolutional and Recurrent Networks} \\
+	Sheikh Muhammad Saiful Islam, \textbf{Md Mahedi Hasan} \\
+	\textit{In 21st International Conference on Computer and Information Technology (ICCIT), 2018, Bangladesh.}
+	
+	\item \textbf{Two-stage Network for Early Detection and Grading of Diabetic Retinopathy using Retinal Images} \\
+	Sheikh Muhammad Saiful Islam, \textbf{Md Mahedi Hasan}, Sohaib Abdullah \\
+	\textit{In 5th International Conference on Engineering Research, Innovation and Education (ICERIE), 2019, SUST, Bangladesh.}
+\end{bibsection}
+
+
+
+\section{Thesis}
+	{\bf Postgraduate Thesis}
 	\begin{innerlist}
-		\item[] Supervisor: Dr. Hosssen Asiful Mustafa
-		\item[] Report \& Code: \href{https://github.com/Mahedi-61/Essay-Scoring/} {https://github.com/Mahedi-61/Essay-Scoring}
+	\item \textbf{Thesis Title}: \emph{Recognizing and tracking people by their gait signature across multiple non-intersecting surveillance cameras.} \\
+		  \textbf{Advisor}: \href{https://hossenmustafa.buet.ac.bd/} {Dr. Hossen Asiful Mustafa} \\
+		  \textbf{Status}: ongoing
 	\end{innerlist}
 
-	\item  Development of automated essay scoring
+	\flushleft
+	{\bf Undergraduate Thesis}
 	\begin{innerlist}
-		\item[] Supervisor: Dr. Hosssen Asiful Mustafa
-		\item[] Report \& Code: \href{https://github.com/Mahedi-61/Essay-Scoring/} {https://github.com/Mahedi-61/Distributed-Password-Cracker}
+	\item \textbf{Thesis Title}: \emph{Planning and Development of Engineering maintenance module of radiological equipment X-Ray in rural areas of Bangladesh.} \\
+	\textbf{Advisor}: \href{http://www.kuet.ac.bd/eee/ahmad/} {Prof. Dr. Mohiuddin Ahmad}
 	\end{innerlist}
 	
-	\item File Encryption and Decryption with DES
-	\begin{innerlist}
-		\item[] Supervisor: Dr. Hosssen Asiful Mustafa
-		\item[] Report \& Code: \href{https://github.com/Mahedi-61/File-Encryption-Decryption-with-DES} {https://github.com/Mahedi-61/File-Encryption-Decryption-with-DES}
-	\end{innerlist}
-\end{outerlist}
+	
+	
+	
+
+\section{Research Projects}
+\begin{bibsection}
+	\item \textbf{Gait Based People Identification} \\
+			RNN based temporal model for people Identification based on their gait signature. \\
+			Report \& Code: \href{https://github.com/Mahedi-61/temporal\_network} {https://github.com/Mahedi-61/temporal\_network}
+	
+	\item  \textbf{Development of Automated Essay Scoring} \\
+		   Development of machine learning based automated essay scoring (English) system. \\
+		   Report \& Code: \href{https://github.com/Mahedi-61/Essay-Scoring/} {https://github.com/Mahedi-61/Essay-Scoring} 
+
+
+	\item  \textbf{Distributed Password Cracking System} \\
+		   Multiple Client based distributed online password cracking system. \\
+	       Report \& Code: \href{https://github.com/Mahedi-61/Essay-Scoring/} {https://github.com/Mahedi-61/Distributed-Password-Cracker}
+	       
+	 \item  \textbf{File Encryption Decryption with DES} \\
+		DES cryptographic algorithm implementation from scratch. \\
+	 Report: \href{https://github.com/Mahedi-61/File-Encryption-Decryption-with-DES} {https://github.com/Mahedi-61/File-Encryption-Decryption-with-DES}
+		  
+\end{bibsection}
 
 
 
@@ -331,6 +376,23 @@ Computer vision, Image Processing and Pattern Recognition, Machine Learning
 \begin{innerlist}
 	\item[] KUET students merit scholarships through four years for academic
 	excellence from the Govt. of the People's Republic of Bangladesh
+\end{innerlist}
+
+
+
+\section{Technical Attachments \& Tours}
+{\bf Attachment: }
+\begin{innerlist}
+\item[] Three days attachment on Radiological and Cardiologic Medical Imaging Equipment in
+Khulna Medical College Hospital (KMCH).
+\end{innerlist}
+
+\flushleft
+{\bf Tours: }\\
+\begin{innerlist}
+	\item[] Khulna Power Company Limited (KPCL), Watsila, Khulna
+	\item[] Power Grid Company of Bangladesh Ltd. (PGCB), Khulna
+	\item[] Goalpara Power Station, Khulna.
 \end{innerlist}
 
 
@@ -347,10 +409,11 @@ Computer vision, Image Processing and Pattern Recognition, Machine Learning
 \section{Technical Skill}
 \begin{innerlist}
 	\item[] Programming Languages: \hfill {C, C++, Java, Python} \\
-	\item[] Hardware: \hfill {Verilog HDL} \\
+	\item[] Web Programming: \hfill {PHP, JavaScript} \\
 	\item[] Numerical Analysis: \hfill {MATLAB} \\
 	\item[] Application Development: \hfill {Android} \\
-	\item[] Database: \hfill {SQL} \\
+	\item[] System Administration: \hfill {Unix/Linux} \\
+	\item[] Database Systems: \hfill {SQL} \\
 \end{innerlist}
 
 
